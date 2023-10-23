@@ -1,4 +1,6 @@
 .cart-section {
+    position: sticky;
+    top: 0;
     margin-left: 20px;
 }
 

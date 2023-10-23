@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaCartPlus } from "react-icons/fa";
 import './Product.css';
 
 const Product = ({ product }) => {
@@ -7,7 +8,13 @@ const Product = ({ product }) => {
     return (
         <div className='product-section'>
             <img src={img} alt="" />
-            <h6 className='name'>{name}</h6>
+            <div className='card-text'>
+                <h6 className='name'>{name}</h6>
+                <h6 className='price'>Price: ${price}</h6>
+                <p className='seller'><small>Seller: {seller}</small></p>
+                <p className='ratings'><small>Ratings: {ratings} star</small></p>
+            </div>
+            <button className='btn-cart'>Add to Cart<FaCartPlus className='icon'></FaCartPlus></button>
         </div>
     );
 };

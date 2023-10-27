@@ -36,13 +36,6 @@ const Shop = () => {
                 setProducts(data);
             })
     }, []);
-    // useEffect(() => {
-    //     fetch('products.json')
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             setProducts(data);
-    //         })
-    // }, []);
 
     // get cart product from local storage
     useEffect(() => {
